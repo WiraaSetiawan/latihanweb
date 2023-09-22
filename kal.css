@@ -77,6 +77,14 @@ header .icon span:last-child {
     z-index: 1;
 }
 
+.days li.inactive{
+    color: #aaa;
+}
+
+.days li.active{
+    color: #fff;
+}
+
 .calendar ul li{
     position: relative;
     width: calc(100% / 7);
@@ -92,9 +100,12 @@ header .icon span:last-child {
     z-index: -1;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    background: #f2f2f2;
 }
 
 .days li:hover::before {
     background: #f2f2f2;
+}
+
+.days li.active::before{
+    background: #9B59B6;
 }
